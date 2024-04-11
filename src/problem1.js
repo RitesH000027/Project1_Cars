@@ -4,7 +4,7 @@ function findCarById(inventory, id1) {
             return inventory[i];
         }
     }
-    return null; // Car with specified id not found
+    return null;
 }
 
 module.exports = findCarById;
