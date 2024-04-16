@@ -1,11 +1,12 @@
-function filterBMWAndAudi(inventory) {
-    const filteredCars = [];
+function getBMWAndAudiCars(inventory) {
+    const bmwAndAudi = [];
+    const allowedMakes = ['BMW', 'Audi'];
     for (let i = 0; i < inventory.length; i++) {
-        if (inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
-            filteredCars.push(inventory[i]);
+        if (allowedMakes.includes(inventory[i].car_make)) {
+            bmwAndAudi.push(inventory[i]);
         }
     }
-    return filteredCars;
+    return bmwAndAudi;
 }
 
-module.exports = filterBMWAndAudi;
+module.exports = getBMWAndAudiCars;

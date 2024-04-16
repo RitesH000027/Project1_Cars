@@ -1,7 +1,6 @@
-const filterBMWAndAudi = require('../src/problem6');
+const getBMWAndAudiCars = require('../src/problem6');
 
 const inventory = require('../inventory');
 
-
-const filteredCars = filterBMWAndAudi(inventory);
-console.log(JSON.stringify(filteredCars));
+const bmwAndAudi = getBMWAndAudiCars(inventory);
+console.log(JSON.stringify(bmwAndAudi));
